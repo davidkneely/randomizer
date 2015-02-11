@@ -50,15 +50,13 @@ public class Randomizer {
       return Math.round(max * randomFloat());
   }
 
-
   /**
    * Prints 10 random floats between the ranges 0 and 100.
    * @param args The commandline arguments.
    */
   public static void main(String[] args) {
-
     Date date = new java.util.Date();
-    long inputSeed = (long) date.getTime();
+    long inputSeed = date.getTime();
     Randomizer randomizer = new Randomizer(inputSeed);
     for (int i = 0; i < 10; i++) {
       System.out.println(randomizer.randomInt(100));
