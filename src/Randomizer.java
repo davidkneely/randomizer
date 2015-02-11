@@ -62,5 +62,4 @@ public class Randomizer {
       System.out.println(randomizer.randomInt(100));
     }
   }
-
 }
